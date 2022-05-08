@@ -67,7 +67,6 @@ router.put('/:id', (req, res) => {
   // update a category by its `id` value
   // pass in req.body instead to only update what's passed through
   Category.update(req.body, {
-    individualHooks: true,
     where: {
       id: req.params.id
     }
